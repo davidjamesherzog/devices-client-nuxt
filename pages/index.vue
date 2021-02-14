@@ -21,14 +21,11 @@
   </section>
 </template>
 
-<script>
-import Card from '~/components/Card'
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator';
 
-export default {
-  name: 'HomePage',
-
-  components: {
-    Card,
-  },
-}
+@Component({
+  name: 'Index'
+})
+export default class Index extends Vue {}
 </script>

@@ -8,3 +8,12 @@
     </h3>
   </section>
 </template>
+
+<script lang="ts">
+import { Component, Vue } from 'nuxt-property-decorator';
+
+@Component({
+  name: 'Inspire'
+})
+export default class Inspire extends Vue {}
+</script>

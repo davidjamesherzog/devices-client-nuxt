@@ -17,13 +17,18 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.8.3",
     "nuxt": "^2.14.12",
-    "nuxt-buefy": "^0.4.4"
+    "nuxt-buefy": "^0.4.4",
+    "nuxt-property-decorator": "^2.9.1",
+    "vuex-class": "^0.3.2",
+    "vuex-class-component": "^2.3.5"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.12",
     "@nuxt/typescript-build": "^2.0.4",
     "@nuxtjs/eslint-config-typescript": "^5.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@types/jest": "^26.0.20",
+    "@vue/cli-plugin-unit-jest": "^4.5.11",
     "@vue/test-utils": "^1.1.2",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.1.0",
