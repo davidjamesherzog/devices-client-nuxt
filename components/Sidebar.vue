@@ -7,10 +7,6 @@
     :overlay="true"
   >
     <div class="p-1">
-      <!--<img
-        src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
-        alt="Lightweight UI components for Vue.js based on Bulma"
-      />-->
       <h4 class="is-size-4">Devices</h4>
       <app-menu />
     </div>

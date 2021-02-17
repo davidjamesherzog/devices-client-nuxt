@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppMenu template is a Vue instance 1`] = `
+<b-menu-stub accordion="true" activable="true" class="app-menu section">
+  <b-menu-list-stub label="General" ariarole="" size="is-small">
+    <div>
+      <b-menu-item-stub label="Home" icon="home" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Home"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Devices" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Devices"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Networks" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Networks"></b-menu-item-stub>
+    </div>
+  </b-menu-list-stub>
+</b-menu-stub>
+`;
+
+exports[`AppMenu template should render devices link 1`] = `
+<b-menu-stub accordion="true" activable="true" class="app-menu section">
+  <b-menu-list-stub label="General" ariarole="" size="is-small">
+    <div>
+      <b-menu-item-stub label="Home" icon="home" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Home"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Devices" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Devices"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Networks" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Networks"></b-menu-item-stub>
+    </div>
+  </b-menu-list-stub>
+</b-menu-stub>
+`;
+
+exports[`AppMenu template should render home link 1`] = `
+<b-menu-stub accordion="true" activable="true" class="app-menu section">
+  <b-menu-list-stub label="General" ariarole="" size="is-small">
+    <div>
+      <b-menu-item-stub label="Home" icon="home" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Home"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Devices" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Devices"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Networks" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Networks"></b-menu-item-stub>
+    </div>
+  </b-menu-list-stub>
+</b-menu-stub>
+`;
+
+exports[`AppMenu template should render networks link 1`] = `
+<b-menu-stub accordion="true" activable="true" class="app-menu section">
+  <b-menu-list-stub label="General" ariarole="" size="is-small">
+    <div>
+      <b-menu-item-stub label="Home" icon="home" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Home"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Devices" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Devices"></b-menu-item-stub>
+    </div>
+    <div>
+      <b-menu-item-stub label="Networks" icon="lightbulb" animation="slide" tag="router-link" ariarole="" size="is-small" to="[object Object]" data-menu="Networks"></b-menu-item-stub>
+    </div>
+  </b-menu-list-stub>
+</b-menu-stub>
+`;

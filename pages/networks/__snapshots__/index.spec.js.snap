@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Networks template is a Vue instance 1`] = `
+<section class="section">
+  <h2 class="title is-3 has-text-grey">Networks</h2>
+</section>
+`;

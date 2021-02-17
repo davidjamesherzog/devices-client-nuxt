@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card is a Vue instance 1`] = `
+<div class="column">
+  <div class="card">
+    <header class="card-header">
+      <p data-card-title="" class="card-header-title has-text-grey">
+
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content has-text-centered"><span class="icon has-text-primary is-large" data-card-icon=""><i class="mdi mdi-undefined mdi-48px"></i></span></div>
+    </div>
+    <footer class="card-footer">
+      <div class="card-footer-item"><span></span></div>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Card should render icon 1`] = `
+<div class="column">
+  <div class="card">
+    <header class="card-header">
+      <p data-card-title="" class="card-header-title has-text-grey">
+
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content has-text-centered"><span class="icon has-text-primary is-large" data-card-icon=""><i class="mdi mdi-cellphone-link mdi-48px"></i></span></div>
+    </div>
+    <footer class="card-footer">
+      <div class="card-footer-item"><span></span></div>
+    </footer>
+  </div>
+</div>
+`;
+
+exports[`Card should render title 1`] = `
+<div class="column">
+  <div class="card">
+    <header class="card-header">
+      <p data-card-title="" class="card-header-title has-text-grey">
+        My Card
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content has-text-centered"><span class="icon has-text-primary is-large" data-card-icon=""><i class="mdi mdi-undefined mdi-48px"></i></span></div>
+    </div>
+    <footer class="card-footer">
+      <div class="card-footer-item"><span></span></div>
+    </footer>
+  </div>
+</div>
+`;

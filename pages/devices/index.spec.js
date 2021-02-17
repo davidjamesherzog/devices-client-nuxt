@@ -1,8 +1,8 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Buefy from 'buefy';
-import Inspire from '~/pages/inspire.vue';
+import Devices from './index.vue';
 
-describe('Inspire', () => {
+describe('Devices', () => {
   describe('template', () => {
     let localVue;
 
@@ -12,7 +12,7 @@ describe('Inspire', () => {
     });
 
     test('is a Vue instance', () => {
-      const wrapper = shallowMount(Inspire, { localVue });
+      const wrapper = shallowMount(Devices, { localVue });
       expect(wrapper.vm).toBeTruthy();
       expect(wrapper).toMatchSnapshot();
     });

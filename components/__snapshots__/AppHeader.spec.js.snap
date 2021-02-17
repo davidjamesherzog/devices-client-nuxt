@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader template is a Vue instance 1`] = `
+<nav role="navigation" aria-label="main navigation" class="app-header navbar header has-shadow is-primary">
+  <div class="navbar-brand">
+    <div class="navbar-burger"><span></span> <span></span> <span></span></div> <a href="/" class="navbar-item">
+      <h4 class="is-size-4">Devices</h4>
+    </a>
+  </div>
+</nav>
+`;

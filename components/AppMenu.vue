@@ -7,6 +7,7 @@
           :icon="item.icon"
           tag="router-link"
           :to="item.to"
+          :data-menu="item.title"
         ></b-menu-item>
       </div>
     </b-menu-list>
@@ -27,9 +28,14 @@ export default class Menu extends Vue {
       to: { name: 'index' }
     },
     {
-      title: 'Inspire',
+      title: 'Devices',
       icon: 'lightbulb',
-      to: { name: 'inspire' }
+      to: { name: 'devices' }
+    },
+    {
+      title: 'Networks',
+      icon: 'lightbulb',
+      to: { name: 'networks' }
     }
   ];
 

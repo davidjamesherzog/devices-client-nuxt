@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar template is a Vue instance 1`] = `
+<b-sidebar-stub type="is-light" overlay="true" position="fixed" fullheight="true" cancancel="escape,outside" oncancel="function _default() {}" scroll="clip">
+  <div class="p-1">
+    <h4 class="is-size-4">Devices</h4>
+    <app-menu-stub></app-menu-stub>
+  </div>
+</b-sidebar-stub>
+`;
