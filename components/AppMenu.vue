@@ -1,5 +1,5 @@
 <template>
-  <b-menu>
+  <b-menu class="app-menu section">
     <b-menu-list label="General">
       <div v-for="(item, key) of items" :key="key" @click="close()">
         <b-menu-item
@@ -15,7 +15,6 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
-// import { Table, Input } from 'buefy';
 
 @Component({
   name: 'AppMenu'

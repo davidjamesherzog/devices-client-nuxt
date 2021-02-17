@@ -1,6 +1,6 @@
 <template>
   <nav
-    class="navbar header has-shadow is-primary"
+    class="app-header navbar header has-shadow is-primary"
     role="navigation"
     aria-label="main navigation"
   >
@@ -11,7 +11,8 @@
         <span />
       </div>
       <a class="navbar-item" href="/">
-        <img src="~assets/buefy.png" alt="Buefy" height="28" />
+        <!--<img src="~assets/buefy.png" alt="Buefy" height="28" />-->
+        <h4 class="is-size-4">Devices</h4>
       </a>
     </div>
   </nav>

@@ -7,10 +7,11 @@
     :overlay="true"
   >
     <div class="p-1">
-      <img
+      <!--<img
         src="https://raw.githubusercontent.com/buefy/buefy/dev/static/img/buefy-logo.png"
         alt="Lightweight UI components for Vue.js based on Bulma"
-      />
+      />-->
+      <h4 class="is-size-4">Devices</h4>
       <app-menu />
     </div>
   </b-sidebar>
@@ -29,7 +30,7 @@ import AppMenu from '~/components/AppMenu.vue';
 export default class Sidebar extends Vue {
   private open: Boolean = false;
 
-  created() {
+  mounted() {
     this.$nuxt.$on('toggle-menu', this.toggleOpen);
     this.$nuxt.$on('close-menu', this.close);
   }
