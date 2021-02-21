@@ -31,7 +31,7 @@ export default class AppHeader extends Vue {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .navbar-burger {
   margin-left: 0;
 }

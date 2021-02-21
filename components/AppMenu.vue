@@ -29,12 +29,12 @@ export default class Menu extends Vue {
     },
     {
       title: 'Devices',
-      icon: 'lightbulb',
+      icon: 'devices',
       to: { name: 'devices' }
     },
     {
       title: 'Networks',
-      icon: 'lightbulb',
+      icon: 'lan',
       to: { name: 'networks' }
     }
   ];
@@ -45,7 +45,7 @@ export default class Menu extends Vue {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .p-1 {
   padding: 1em;
 }

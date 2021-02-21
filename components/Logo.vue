@@ -30,7 +30,7 @@ import { Component, Vue } from 'nuxt-property-decorator';
 export default class Logo extends Vue {}
 </script>
 
-<style>
+<style lang="scss" scoped>
 .NuxtLogo {
   animation: 1s appear;
   margin: auto;

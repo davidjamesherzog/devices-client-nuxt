@@ -41,7 +41,7 @@ export default class Sidebar extends Vue {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .p-1 {
   padding: 1em;
 }
