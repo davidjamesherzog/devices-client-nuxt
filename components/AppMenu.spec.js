@@ -1,7 +1,6 @@
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Buefy from 'buefy';
 import AppMenu from '~/components/AppMenu.vue';
-import Card from '~/components/Card';
 
 describe('AppMenu', () => {
   describe('close', () => {
