@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NetworkCard template should render home link 1`] = `
+<div class="column card-width">
+  <div class="card">
+    <header class="card-header">
+      <p data-card-title="" class="card-header-title has-text-grey">
+        TestWifi
+      </p>
+    </header>
+    <div class="card-content">
+      <div class="content has-text-centered">
+        <b-icon-stub type="is-primary" icon="ethernet-cable" size="is-large" data-card-icon=""></b-icon-stub>
+      </div>
+    </div>
+    <footer class="card-footer">
+      <div class="card-footer-item"><span data-card-description="">
+          Test description
+        </span></div>
+    </footer>
+  </div>
+</div>
+`;
