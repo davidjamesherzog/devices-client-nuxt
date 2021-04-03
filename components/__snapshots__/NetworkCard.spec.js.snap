@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NetworkCard template should render home link 1`] = `
+exports[`NetworkCard template should render network card 1`] = `
 <div class="column card-width">
   <div class="card">
     <header class="card-header">
