@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb template is a Vue instance 1`] = `
+<nav aria-label="breadcrumbs" data-breadcrumbs="" class="breadcrumb">
+  <ul>
+    <li><a>Home</a></li>
+  </ul>
+</nav>
+`;
