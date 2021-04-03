@@ -6,8 +6,9 @@
           :label="item.title"
           :icon="item.icon"
           tag="router-link"
-          :to="item.to"
+          :to="item.route"
           :data-menu="item.title"
+          :class="{ 'has-text-weight-bold': isCurrentRoute(item.route) }"
         ></b-menu-item>
       </div>
     </b-menu-list>
@@ -16,28 +17,34 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import Link from '~/models/Link';
+import Route from '~/models/Route';
 
 @Component({
   name: 'AppMenu'
 })
 export default class Menu extends Vue {
-  private items: Array<any> = [
+  private items: Array<Link> = [
     {
       title: 'Home',
       icon: 'home',
-      to: { name: 'index' }
+      route: { name: 'index' }
     },
     {
       title: 'Devices',
       icon: 'devices',
-      to: { name: 'devices' }
+      route: { name: 'devices' }
     },
     {
       title: 'Networks',
       icon: 'lan',
-      to: { name: 'networks' }
+      route: { name: 'networks' }
     }
   ];
+
+  public isCurrentRoute(route: Route): boolean {
+    return this.$route.name === route.name;
+  }
 
   public close(): void {
     this.$nuxt.$emit('close-menu');
