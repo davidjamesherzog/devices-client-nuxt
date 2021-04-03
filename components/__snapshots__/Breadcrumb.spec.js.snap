@@ -3,7 +3,26 @@
 exports[`Breadcrumb template is a Vue instance 1`] = `
 <nav aria-label="breadcrumbs" data-breadcrumbs="" class="breadcrumb">
   <ul>
-    <li><a>Home</a></li>
+    <li data-breadcrumb="home" class="capitalize"><a>home</a></li>
+  </ul>
+</nav>
+`;
+
+exports[`Breadcrumb template should render home breadcrumb 1`] = `
+<nav aria-label="breadcrumbs" data-breadcrumbs="" class="breadcrumb">
+  <ul>
+    <li data-breadcrumb="home" class="capitalize"><a>home</a></li>
+  </ul>
+</nav>
+`;
+
+exports[`Breadcrumb template should render networks breadcrumb 1`] = `
+<nav aria-label="breadcrumbs" data-breadcrumbs="" class="breadcrumb">
+  <ul>
+    <li data-breadcrumb="home" class="capitalize"><a>home</a></li>
+    <li class="capitalize is-active"><a data-breadcrumb="networks" aria-current="page">
+        networks
+      </a></li>
   </ul>
 </nav>
 `;

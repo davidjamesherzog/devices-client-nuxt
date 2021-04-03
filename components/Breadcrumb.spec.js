@@ -93,31 +93,42 @@ describe('Breadcrumb', () => {
       expect(wrapper).toMatchSnapshot();
     });
 
-    /* test('should render home link', () => {
-      const wrapper = shallowMount(AppMenu, {
-        localVue
+    test('should render home breadcrumb', () => {
+      const $route = {
+        path: ''
+      };
+      const wrapper = shallowMount(Breadcrumb, {
+        localVue,
+        mocks: {
+          $route
+        },
+        stubs: {
+          NuxtLink: RouterLinkStub
+        }
       });
-      const title = wrapper.find('[data-menu="Home"]');
-      expect(title.exists()).toBeTruthy();
+      const breadcrumb = wrapper.find('[data-breadcrumb="home"]');
+      expect(breadcrumb.exists()).toBeTruthy();
+      expect(breadcrumb.text()).toEqual('home');
       expect(wrapper).toMatchSnapshot();
-    }); */
+    });
 
-    /* test('should render devices link', () => {
-      const wrapper = shallowMount(AppMenu, {
-        localVue
+    test('should render networks breadcrumb', () => {
+      const $route = {
+        path: 'networks'
+      };
+      const wrapper = shallowMount(Breadcrumb, {
+        localVue,
+        mocks: {
+          $route
+        },
+        stubs: {
+          NuxtLink: RouterLinkStub
+        }
       });
-      const title = wrapper.find('[data-menu="Devices"]');
-      expect(title.exists()).toBeTruthy();
+      const breadcrumb = wrapper.find('[data-breadcrumb="networks"]');
+      expect(breadcrumb.exists()).toBeTruthy();
+      expect(breadcrumb.text()).toEqual('networks');
       expect(wrapper).toMatchSnapshot();
-    }); */
-
-    /* test('should render networks link', () => {
-      const wrapper = shallowMount(AppMenu, {
-        localVue
-      });
-      const title = wrapper.find('[data-menu="Networks"]');
-      expect(title.exists()).toBeTruthy();
-      expect(wrapper).toMatchSnapshot();
-    }); */
+    });
   });
 });

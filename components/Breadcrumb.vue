@@ -1,16 +1,22 @@
 <template>
   <nav class="breadcrumb" aria-label="breadcrumbs" data-breadcrumbs>
     <ul>
-      <li><nuxt-link to="/">Home</nuxt-link></li>
+      <li data-breadcrumb="home" class="capitalize">
+        <nuxt-link to="/">home</nuxt-link>
+      </li>
       <li
         v-for="(path, key) of paths"
         :key="key"
         class="capitalize"
         :class="{ 'is-active': key === paths.length - 1 }"
       >
-        <nuxt-link :to="constructUrl(path)" aria-current="page">{{
-          path
-        }}</nuxt-link>
+        <nuxt-link
+          :data-breadcrumb="path"
+          :to="constructUrl(path)"
+          aria-current="page"
+        >
+          {{ path }}
+        </nuxt-link>
       </li>
     </ul>
   </nav>
