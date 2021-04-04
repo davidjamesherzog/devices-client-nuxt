@@ -17,8 +17,8 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
-import Link from '~/models/Link';
-import Route from '~/models/Route';
+import Link from '~/client/models/Link';
+import Route from '~/client/models/Route';
 
 @Component({
   name: 'AppMenu'

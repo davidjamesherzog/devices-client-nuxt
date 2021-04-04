@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
-import Network from '~/models/Network';
+import Network from '~/client/models/Network';
 import NetworkCard from '~/components/NetworkCard.vue';
 
 @Component({
