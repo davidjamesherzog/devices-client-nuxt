@@ -1,4 +1,8 @@
-export default {
+import bootstrap from './.nest/nest.js';
+
+const isDev = process.env.NODE_ENV === 'development';
+
+const config = async () => ({
   srcDir: 'client/',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -22,6 +26,8 @@ export default {
       }
     ]
   },
+
+  serverMiddleware: isDev ? [] : [{ path: '/api', handler: await bootstrap() }],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['@/assets/scss/main.scss'],
@@ -59,7 +65,9 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: isDev ? 'http://localhost:4000/api' : 'http://localhost:3000/api'
+  },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -70,4 +78,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}
-};
+});
+
+export default config;

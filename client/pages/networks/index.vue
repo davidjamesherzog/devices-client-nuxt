@@ -4,9 +4,11 @@
       <h2 class="title is-3 has-text-grey">Networks</h2>
     </section>
     <section class="networks">
-      <network-card :network="network"></network-card>
-      <network-card :network="network2"></network-card>
-      <network-card :network="network3"></network-card>
+      <network-card
+        v-for="(network, key) of networks"
+        :key="key"
+        :network="network"
+      ></network-card>
     </section>
   </div>
 </template>
@@ -23,26 +25,11 @@ import NetworkCard from '~/components/NetworkCard.vue';
   }
 })
 export default class Networks extends Vue {
-  private network: Network = {
-    id: 1,
-    name: 'GozrehblasterN',
-    description: 'Test Wifi',
-    type: 'WIFI'
-  };
+  private networks: Array<Network> = [];
 
-  private network2: Network = {
-    id: 2,
-    name: 'HerzogHomeN',
-    description: 'Test Wifi',
-    type: 'WIFI'
-  };
-
-  private network3: Network = {
-    id: 3,
-    name: 'Wired',
-    description: 'Wired devices',
-    type: 'Wired'
-  };
+  public async fetch() {
+    this.networks = await this.$axios.$get('/networks');
+  }
 }
 </script>
 

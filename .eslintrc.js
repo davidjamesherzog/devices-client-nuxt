@@ -14,6 +14,11 @@ module.exports = {
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    'vue/component-definition-name-casing': ['error', 'kebab-case']
+    'vue/component-definition-name-casing': ['error', 'kebab-case'],
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    '@typescript-eslint/no-explicit-any': 'off'
   }
 };
