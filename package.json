@@ -14,7 +14,8 @@
     "test:client": "jest",
     "test:server": "jest --config ./jest-server.config.js",
     "test:e2e": "jest --config ./server/test/jest-e2e.json",
-    "test": "npm run test:client && npm run test:server && npm run test:e2e"
+    "test": "npm run test:client && npm run test:server",
+    "test-all": "npm run test:client && npm run test:server && npm run test:e2e"
   },
   "dependencies": {
     "@nestjs/common": "^7.6.15",
