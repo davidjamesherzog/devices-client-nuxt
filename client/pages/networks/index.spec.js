@@ -25,12 +25,14 @@ describe('Networks', () => {
           type: 'Wired'
         }
       ];
-      const networks = new Networks();
-      networks.$axios = {
-        $get: jest.fn().mockReturnValue(networkData)
+      const page = new Networks();
+      const mockContext = {
+        $axios: {
+          $get: jest.fn().mockReturnValue(networkData)
+        }
       };
-      const data = await networks.fetch();
-      expect(networks.$axios.$get).toHaveBeenCalledWith('/networks');
+      const data = await page.$options.fetch.bind(mockContext)();
+      expect(mockContext.$axios.$get).toHaveBeenCalledWith('/networks');
       expect(data).toEqual(networkData);
       done();
     });

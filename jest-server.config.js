@@ -13,5 +13,13 @@ module.exports = {
   collectCoverage: true,
   collectCoverageFrom: ['**/*.(t|j)s', '!**/*.e2e-spec.(t|j)s'],
   coverageDirectory: '../coverage-server',
+  coverageThreshold: {
+    global: {
+      branches: 12,
+      functions: 18,
+      lines: 48,
+      statements: 50
+    }
+  },
   testEnvironment: 'node'
 };
