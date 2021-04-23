@@ -18,6 +18,8 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+coverage-client
+coverage-server
 
 # nyc test coverage
 .nyc_output
@@ -37,6 +39,10 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+
+# data
+/data
+/pgadmin
 
 # TypeScript v1 declaration files
 typings/
@@ -67,6 +73,9 @@ typings/
 
 # nuxt.js build output
 .nuxt
+
+# nest.js build output
+.nest
 
 # Nuxt generate
 dist

@@ -1,0 +1,27 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    mem_limit: 2048MB
+    mem_reservation: 1G
+    environment:
+      POSTGRES_DB: devices
+      POSTGRES_USER: device_api
+      POSTGRES_PASSWORD: device_password
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - '5432:5432'
+  pgadmin4-demo:
+    image: dpage/pgadmin4
+    restart: always
+    mem_limit: 2048MB
+    mem_reservation: 1G
+    environment:
+      PGADMIN_DEFAULT_EMAIL: davidjherzog@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: pgadmin_password
+    ports:
+      - '8888:80'
+    volumes:
+      - ./pgadmin:/var/lib/pgadmin

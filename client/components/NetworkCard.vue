@@ -29,7 +29,7 @@
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator';
-import Network from '~/models/Network';
+import Network from '~/client/models/Network';
 
 @Component({
   name: 'NetworkCard'
