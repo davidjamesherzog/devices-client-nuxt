@@ -27,7 +27,7 @@ import NetworkCard from '~/components/NetworkCard.vue';
 export default class Networks extends Vue {
   private networks: Array<Network> = [];
 
-  public async fetch(): Promise<void> {
+  public async fetch(): Promise<Array<Network>> {
     this.networks = await this.$axios.$get('/networks');
     return this.networks;
   }
