@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NetworkListItem template should render network list item 1`] = `
+<div data-list-item-id="1" class="box">
+  <article class="media">
+    <div class="media-left">
+      <div class="content has-text-centered">
+        <b-icon-stub type="is-primary" icon="wifi" size="is-large" data-card-icon=""></b-icon-stub>
+      </div>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p><strong data-list-item-title="1">TestWifi</strong> <small data-list-item-type="1">WIFI</small> <br> <span data-list-item-description="1">
+            Test description
+          </span></p>
+      </div>
+    </div>
+  </article>
+</div>
+`;

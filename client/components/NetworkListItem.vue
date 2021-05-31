@@ -1,5 +1,33 @@
 <template>
-  <div class="column card-width">
+  <div class="box" :data-list-item-id="network.id">
+    <article class="media">
+      <div class="media-left">
+        <div class="content has-text-centered">
+          <b-icon
+            :icon="type"
+            size="is-large"
+            type="is-primary"
+            data-card-icon
+          />
+        </div>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p>
+            <strong :data-list-item-title="network.id">{{
+              network.name
+            }}</strong>
+            <small :data-list-item-type="network.id">{{ network.type }}</small>
+            <br />
+            <span :data-list-item-description="network.id">
+              {{ network.description }}
+            </span>
+          </p>
+        </div>
+      </div>
+    </article>
+  </div>
+  <!-- <div class="column card-width">
     <div class="card">
       <header class="card-header">
         <p class="card-header-title has-text-grey" data-card-title>
@@ -24,7 +52,7 @@
         </div>
       </footer>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script lang="ts">
@@ -32,9 +60,9 @@ import { Component, Prop, Vue } from 'nuxt-property-decorator';
 import Network from '~/client/models/Network';
 
 @Component({
-  name: 'NetworkCard'
+  name: 'NetworkList'
 })
-export default class Card extends Vue {
+export default class NetworkList extends Vue {
   @Prop({ type: Object })
   private network!: Network;
 
@@ -45,8 +73,8 @@ export default class Card extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.card-width {
-  max-width: 250px;
+.box {
+  margin-bottom: 0.5rem;
   cursor: pointer;
 }
 </style>

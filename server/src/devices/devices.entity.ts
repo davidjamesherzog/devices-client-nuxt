@@ -3,7 +3,7 @@ import {
   Entity,
   PrimaryGeneratedColumn,
   Column,
-  OneToOne,
+  ManyToOne,
   JoinColumn
 } from 'typeorm';
 import { Networks } from '../networks/networks.entity';
@@ -31,7 +31,7 @@ export class Devices extends BaseEntity {
   @Column()
   macAddress: string;
 
-  @OneToOne(() => Networks)
+  @ManyToOne(() => Networks, (network) => network.id)
   @JoinColumn()
   network: Networks;
 }
