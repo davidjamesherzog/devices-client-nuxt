@@ -27,32 +27,6 @@
       </div>
     </article>
   </div>
-  <!-- <div class="column card-width">
-    <div class="card">
-      <header class="card-header">
-        <p class="card-header-title has-text-grey" data-card-title>
-          {{ network.name }}
-        </p>
-      </header>
-      <div class="card-content">
-        <div class="content has-text-centered">
-          <b-icon
-            :icon="type"
-            size="is-large"
-            type="is-primary"
-            data-card-icon
-          />
-        </div>
-      </div>
-      <footer class="card-footer">
-        <div class="card-footer-item">
-          <span data-card-description>
-            {{ network.description }}
-          </span>
-        </div>
-      </footer>
-    </div>
-  </div> -->
 </template>
 
 <script lang="ts">
