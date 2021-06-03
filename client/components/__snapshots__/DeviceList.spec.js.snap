@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeviceList template should render device list 1`] = `
+<div>
+  <div data-list-item-id="1" class="box">
+    <article class="media">
+      <div class="media-left">
+        <div class="content has-text-centered"><span class="icon has-text-primary is-large" data-card-icon=""><i class="mdi mdi-laptop mdi-48px"></i></span></div>
+      </div>
+      <div class="media-content">
+        <div class="content">
+          <p><strong data-list-item-title="1">Macbook-Dave</strong> <small data-list-item-os="1">Mac</small> <br> <span data-list-item-description="1">
+            Macbook laptop
+          </span></p>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+`;

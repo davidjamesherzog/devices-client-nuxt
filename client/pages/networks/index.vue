@@ -1,14 +1,8 @@
 <template>
   <div>
     <section class="section">
-      <h2 class="title is-3 has-text-grey">Networks</h2>
-    </section>
-    <section class="networks">
-      <network-card
-        v-for="(network, key) of networks"
-        :key="key"
-        :network="network"
-      ></network-card>
+      <h2 class="title is-3 has-text-grey" data-network-title>Networks</h2>
+      <network-list :networks="networks" data-network-list />
     </section>
   </div>
 </template>
@@ -16,12 +10,12 @@
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
 import Network from '~/client/models/Network';
-import NetworkCard from '~/components/NetworkCard.vue';
+import NetworkList from '~/components/NetworkList.vue';
 
 @Component({
   name: 'Networks',
   components: {
-    NetworkCard
+    NetworkList
   }
 })
 export default class Networks extends Vue {
@@ -34,9 +28,4 @@ export default class Networks extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
-.networks {
-  display: flex;
-  flex-direction: row;
-}
-</style>
+<style lang="scss" scoped></style>

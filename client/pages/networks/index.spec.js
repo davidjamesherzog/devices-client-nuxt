@@ -48,7 +48,10 @@ describe('Networks', () => {
 
     test('is a Vue instance', () => {
       const wrapper = shallowMount(Networks, { localVue });
-      expect(wrapper.vm).toBeTruthy();
+      const title = wrapper.find('[data-network-title]');
+      expect(title.text()).toEqual('Networks');
+      const list = wrapper.find('[data-network-list]');
+      expect(list).toBeDefined();
       expect(wrapper).toMatchSnapshot();
     });
   });
