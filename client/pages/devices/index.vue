@@ -29,7 +29,6 @@ export default class Devices extends Vue {
 
   public async fetch(): Promise<void> {
     await this.list();
-    // return this.devices;
   }
 }
 </script>
