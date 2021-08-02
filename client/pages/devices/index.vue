@@ -7,6 +7,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import { mapActions, mapState } from 'vuex';
 import Device from '~/client/models/Device';
 import DeviceList from '~/components/DeviceList.vue';
 
@@ -14,14 +15,21 @@ import DeviceList from '~/components/DeviceList.vue';
   name: 'Devices',
   components: {
     DeviceList
+  },
+  computed: {
+    ...mapState('device', { devices: '_devices' })
+  },
+  methods: {
+    ...mapActions('device', ['list'])
   }
 })
 export default class Devices extends Vue {
-  private devices: Array<Device> = [];
+  private devices!: Array<Device>;
+  private list!: () => Promise<void>;
 
-  public async fetch(): Promise<Array<Device>> {
-    this.devices = await this.$axios.$get('/devices');
-    return this.devices;
+  public async fetch(): Promise<void> {
+    await this.list();
+    // return this.devices;
   }
 }
 </script>

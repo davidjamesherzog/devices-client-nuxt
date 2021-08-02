@@ -15,7 +15,8 @@ module.exports = {
   coverageDirectory: '../coverage-client',
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',
-    '<rootDir>/pages/**/*.vue'
+    '<rootDir>/pages/**/*.vue',
+    '<rootDir>/store/**/*.ts'
   ],
   coverageThreshold: {
     global: {
