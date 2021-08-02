@@ -9,6 +9,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator';
+import { mapActions, mapState } from 'vuex';
 import Network from '~/client/models/Network';
 import NetworkList from '~/components/NetworkList.vue';
 
@@ -16,14 +17,20 @@ import NetworkList from '~/components/NetworkList.vue';
   name: 'Networks',
   components: {
     NetworkList
+  },
+  computed: {
+    ...mapState('network', { networks: '_networks' })
+  },
+  methods: {
+    ...mapActions('network', ['list'])
   }
 })
 export default class Networks extends Vue {
-  private networks: Array<Network> = [];
+  private networks!: Array<Network>;
+  private list!: () => Promise<void>;
 
-  public async fetch(): Promise<Array<Network>> {
-    this.networks = await this.$axios.$get('/networks');
-    return this.networks;
+  public async fetch(): Promise<void> {
+    await this.list();
   }
 }
 </script>
